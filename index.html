@@ -16,6 +16,55 @@
       --dark-blue: #002147;
     }
 
+    .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--copper-glow);
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo on the left */
+.logo-box {
+  flex: 0 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #fff2e5; /* Soft border */
+}
+
+/* Company name and tagline on the right */
+.company-info {
+  color: var(--white);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.company-name {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin: 5px 0 0;
+  font-style: italic;
+}
+    
     body {
       font-family: 'Merriweather', Georgia, "Times New Roman", serif;
       background-color: var(--dark-blue);
@@ -138,10 +187,12 @@
   
     <header>
      <div class="header-container">
-  <img src="IS-LQ4.png" alt="IS-LQ Logo" />
-  <div>
-    <h1>IntuSens LiquiQ Pvt. Ltd.</h1>
-    <p>Innovation for a Liquid Wise World</p>
+  <div class="logo-box">
+    <img src="IS-LQ4.png" alt="IS-LQ Logo" class="logo-image">
+  </div>
+  <div class="company-info">
+    <h1 class="company-name">IntuSens LiquiQ Pvt. Ltd.</h1>
+    <p class="tagline">Innovation for a Liquid-Wise World</p>
   </div>
 </div>
     </header>
